@@ -42,10 +42,10 @@ button {
     vertical-align: middle;
     justify-content: center;
     padding: 10px 20px;
-    background-color: #d3d3d3;
+    background-color: #ffffff;
     color: rgb(0, 0, 0);
     text-decoration: none;
-    border: none;
+    border: black solid 1px;
     border-radius: 5px;
     font-family: sans-serif;
     margin: 5px;
@@ -99,10 +99,9 @@ button:hover {
     justify-content:flex-start;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #ffffff;
+    background-color: #e6e0d6;
     margin-bottom: 10px;
     border-radius: 10px;
-    border: #d3d3d3 1px solid;
 }
 
 .categoriaEmocoes img{
@@ -114,6 +113,5 @@ button:hover {
 @media (max-width: 600px) {
     main {
     padding: 10px 10px;
-    background-color: #F5F0E6;
     }
 }
