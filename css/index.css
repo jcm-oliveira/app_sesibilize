@@ -83,6 +83,21 @@ button:hover {
   background-color: #3c604f;
   cursor: pointer;
 }
+.botaoReiniciar {
+  display: inline-block;
+  padding: 20px 50px;
+  background-color: #6d282e;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  font-family: sans-serif;
+  font-size: larger;
+}
+.botaoReiniciar:hover {
+  background-color: #41181b;
+  cursor: pointer;
+}
 .imagem {
   display: flex;
   justify-content: center;
