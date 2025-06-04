@@ -136,16 +136,12 @@ button:hover {
 .checkbox-container input[type="checkbox"] {
   display: none;
 }
-.custom-checkbox {
-  width: 20px;
-  height: 20px;
-  border: 2px solid #555;
-  border-radius: 4px;
-  display: inline-block;
-  margin-right: 4px;
-  position: relative;
-  transition: background 0.2s;
-}
+
+  input[type="radio"] {
+    transform: scale(1.5);
+    margin-right: 8px;
+  }
+
 .custom-checkbox::after {
   content: "";
   position: absolute;
