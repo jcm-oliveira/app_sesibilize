@@ -104,22 +104,26 @@ button:hover {
   align-items: center;
 }
 .sensacoes {
-  display: block;
+  display: flex;
   text-align: center;
+  justify-content:center;
+  background-color: #e6e0d6;
+  border-radius: 10px;
 }
 .categoriaEmocoes {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap;
-  background-color: #e6e0d6;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  padding: 20px;
+  flex-wrap: wrap; 
+  margin-bottom: 10px;  
+  padding: 2px;
+  width: 180px;
 }
 .categoriaEmocoes img {
   display: flex;
-  justify-content: flex-start;
+  justify-content:center;
+  align-items: center;
+  align-content: center;
   padding: 10px;
 }
 .checkbox-container {
