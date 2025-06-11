@@ -272,8 +272,13 @@ td {
 }
 
 
-/*------TABELA RESULTADO------
+/*------TABELA RESULTADO------*/
 
+.resultado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* Estilos para o contêiner da tabela */
 #containerTabelaResultados {
     width: 100%; /* Largura total do contêiner */

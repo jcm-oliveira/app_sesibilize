@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,11 +21,11 @@
         </h2>
       </div>
       <div>
-        <form>
+        <form id="formPerfil">
           <div class="sensacoes">
             <div class="dadosPessoais">
-              <label for="ano_nascimento">Primeiro nome</label>
-              <input type="text" id="nome" name="nome" required />
+              <label for="primeiroNome">Primeiro nome</label>
+              <input type="text" id="primeiroNome" name="primeiroNome" required/>
 
               <label for="ano_nascimento">Ano de nascimento</label>
               <select id="ano_nascimento" name="ano_nascimento" required>
@@ -127,7 +127,7 @@
             </div>
           </div>
           <div class="botaoPaginacaoBox">
-            <a href="../pages/imagem1.html" class="botaoInicio">PRÓXIMA</a>
+            <button type="submit" class="botaoPaginacao">PRÓXIMA</button>
           </div>
         </form>
       </div>
@@ -147,5 +147,30 @@
         <b>Avaliação A3 -</b> Arnaldo, João, Marciel, Vanessa
       </div>
     </footer>
+
+    <script>
+      const form = document.getElementById("formPerfil");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault(); // previne envio padrão
+
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+
+        // pega os valores dos campos
+        const primeiroNome = encodeURIComponent(form.primeiroNome.value);
+        const anoNascimento = encodeURIComponent(form.ano_nascimento.value);
+        const genero = encodeURIComponent(form.genero.value);
+        const escolaridade = encodeURIComponent(form.escolaridade.value);
+
+        // monta URL com query string
+        const url = `imagem1.html?primeiroNome=${primeiroNome}&anoNascimento=${anoNascimento}&genero=${genero}&escolaridade=${escolaridade}`;
+
+        // redireciona para a página com os dados na URL
+        window.location.href = url;
+      });
+    </script>
   </body>
 </html>
