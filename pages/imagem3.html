@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sensibilize</title>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <header style="display: flex; justify-content: center; align-items: center">
+      <div class="logo">
+        <img src="../img/brain-solid.svg" alt="" width="180" height="40" />
+      </div>
+      <h1>Sensibilize</h1>
+    </header>
+
+    <main>
+      <div style="display: flex; justify-content: center; align-items: center">
+        <h2>Imagem n° 3</h2>
+      </div>
+      <div class="imagem">
+        <img
+          src="../img/Imagem3.png"
+          alt=""
+          width="600"
+          height="400"
+          id="imagem1"
+        />
+      </div>
+      <div style="text-align: center">
+        <p>
+          Escolha uma das palavras que mais define a imagem pra você de acordo
+          com as suas emoções:
+        </p>
+      </div>
+
+      <div class="sensacoes">
+        <div class="categoriaEmocoes">
+          <div>
+            <img
+              src="../img/EmotionSorrindo.svg"
+              width="40"
+              height="40"
+              alt=""
+            />
+          </div>
+          <div class="buttonBox">
+            <label class="checkbox-container">
+              <input
+                type="radio"
+                id="Alegria"
+                name="emocao_imagem3"
+                value="Alegria"
+              />
+              Alegria
+            </label>
+            <label class="checkbox-container">
+              <input
+                type="radio"
+                id="Calma"
+                name="emocao_imagem3"
+                value="Calma"
+              />
+              Calma
+            </label>
+            <label class="checkbox-container">
+              <input
+                type="radio"
+                id="Coragem"
+                name="emocao_imagem3"
+                value="Coragem"
+              />
+              Coragem
+            </label>
+            <label class="checkbox-container">
+              <input
+                type="radio"
+                id="Amor"
+                name="emocao_imagem3"
+                value="Amor"
+              />
+              Amor
+            </label>
+            <label class="checkbox-container">
+              <input
+                type="radio"
+                id="Esperanca"
+                name="emocao_imagem3"
+                value="Esperanca"
+              />
+              Esperança
+            </label>
+            <label class="checkbox-container">
+              <input
+                type="radio"
+                id="Tranquilidade"
+                name="emocao_imagem3"
+                value="Tranquilidade"
+              />
+              Tranquilidade
+            </label>
+          </div>
+        </div>
+        <div class="categoriaEmocoes">
+          <div>
+            <img src="../img/EmotionTriste.svg" width="40" height="40" alt="" />
+          </div>
+          <div class="buttonBox">
+            <label class="checkbox-container">
+              <input type="radio" id="Tristeza" name="emocao_imagem3" value="Tristeza" />
+              Tristeza
+            </label>
+            <label class="checkbox-container">
+              <input type="radio" id="Raiva" name="emocao_imagem3" value="Raiva" />
+              Raiva
+            </label>
+            <label class="checkbox-container">
+              <input type="radio" id="Medo" name="emocao_imagem3" value="Medo" />
+              Medo
+            </label>
+            <label class="checkbox-container">
+              <input type="radio" id="Odio" name="emocao_imagem3" value="Odio" />
+              Ódio
+            </label>
+            <label class="checkbox-container">
+              <input
+                type="radio"
+                id="Desespero"
+                name="emocao_imagem3"
+                value="Desespero"
+              />
+              Desespero
+            </label>
+            <label class="checkbox-container">
+              <input
+                type="radio"
+                id="Ansiedade"
+                name="emocao_imagem3"
+                value="Ansiedade"
+              />
+              Ansiedade
+            </label>
+          </div>
+        </div>
+      </div>
+        <div class="botaoPaginacaoBox">
+          <button id="btnProximo" class="botaoPaginacao">PRÓXIMO</button>
+        </div>
+    </main>
+    <footer>
+      <div>
+        <img
+          src="../img/Logo-SaoJudas.png"
+          alt="Logo-SaoJudas"
+          width="180"
+          height="40"
+        /><br />
+        <b>UC - Processos psicológicos, biológicos e cognição</b> <br />
+        Universidade São Judas Tadeu - Jabaquara<br />
+        Psicologia | PSC1AM-JBA-25020321<br />
+        <b>Avaliação A3 -</b> Arnaldo, João, Marciel, Vanessa
+      </div>
+    </footer>
+    <script>
+        document.getElementById('btnProximo').addEventListener('click', () => {
+            const opcaoSelecionadaElemento = document.querySelector('input[name="emocao_imagem3"]:checked');
+            if (opcaoSelecionadaElemento) {
+                const valorOpcao = opcaoSelecionadaElemento.value;
+                const urlParams = new URLSearchParams(window.location.search);
+                const selecoesAnteriores = urlParams.toString();
+                window.location.href = `Resultado.html?${selecoesAnteriores}&imagem3=${valorOpcao}`;
+            } else {
+                alert('Por favor, selecione uma opção antes de continuar.');
+            }
+        });
+    </script>
+  </body>
+</html>

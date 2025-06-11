@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sensibilize</title>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <header style="display: flex; justify-content: center; align-items: center">
+      <div class="logo">
+        <img src="../img/brain-solid.svg" alt="" width="180" height="40" />
+      </div>
+      <h1>Sensibilize</h1>
+    </header>
+
+    <main>
+      <div style="display: flex; justify-content: center; align-items: center">
+        <h2>Resultado</h2>
+      </div>
+
+      <div class="dadosPessoaisResultadoBox">
+        <div class="dadosPessoaisResultado">
+          <p>Primeiro nome:</p>
+          <p>Ano de nascimento:</p>
+          <p>Gênero:</p>
+          <p>Escolaridade:</p>
+        </div>
+      </div>
+
+      <div id="containerTabelaResultados" class="container-passo-simples"></div>
+      <script src="../js/script.js"></script>
+
+      <br />
+      <div class="resultado">
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Imagens</th>
+              <th style="color: #3c604f">Positiva</th>
+              <th style="color: #6d282e">Negativa</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Imagem 01</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Imagem 02</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Imagem 03</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Imagem 04</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Imagem 05</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Imagem 06</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Imagem 07</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Imagem 08</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Imagem 09</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Imagem 10</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Imagem 11</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Imagem 12</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <br />
+
+      <div class="resultado">
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Emoções</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8</th>
+              <th>9</th>
+              <th>10</th>
+              <th>11</th>
+              <th>12</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="color: #3c604f">Alegria</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td style="color: #3c604f">Calma</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td style="color: #3c604f">Coragem</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td style="color: #3c604f">Amor</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td style="color: #3c604f">Esperança</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td style="color: #3c604f">Tranquilidade</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td style="color: #6d282e">Tristeza</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td style="color: #6d282e">Raiva</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td style="color: #6d282e">Medo</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td style="color: #6d282e">Ódio</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td style="color: #6d282e">Desespero</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td style="color: #6d282e">Ansiedade</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="botaoPaginacaoBox">
+        <a href="../index.html" class="botaoReiniciar">REINICIAR</a>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <img
+          src="../img/Logo-SaoJudas.png"
+          alt="Logo-SaoJudas"
+          width="180"
+          height="40"
+        /><br />
+        <b>UC - Processos psicológicos, biológicos e cognição</b> <br />
+        Universidade São Judas Tadeu - Jabaquara<br />
+        Psicologia | PSC1AM-JBA-25020321<br />
+        <b>Avaliação A3 -</b> Arnaldo, João, Marciel, Vanessa
+      </div>
+    </footer>
+  </body>
+</html>

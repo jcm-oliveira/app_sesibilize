@@ -2,7 +2,7 @@ body {
   margin: 0px;
   border: 0px;
   padding: 0px;
-  font-family: 'Helvetica', serif;
+  font-family: "Helvetica", serif;
 }
 header {
   background-color: #4f7f68;
@@ -21,6 +21,12 @@ p {
   padding: 10px;
   margin: 5px;
   font-size: 20px;
+}
+h2 {
+  text-align: center;
+}
+a {
+  text-decoration: none;
 }
 .logo {
   display: flex;
@@ -67,8 +73,25 @@ button:hover {
 }
 .botaoPaginacaoBox a {
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
 }
-.botaoPaginacao {
+.botaoPaginacao{
+  padding: 20px 50px;
+  background-color: #4f7f68;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  font-family: sans-serif;
+  font-size: larger;
+  width: 200px;
+  height: 60px;
+}
+.botaoPaginacao:hover {
+  background-color: #3c604f;
+  cursor: pointer;
+}
+.botaoInicio {
   display: inline-block;
   padding: 20px 50px;
   background-color: #4f7f68;
@@ -79,7 +102,7 @@ button:hover {
   font-family: sans-serif;
   font-size: larger;
 }
-.botaoPaginacao:hover {
+.botaoInicio:hover {
   background-color: #3c604f;
   cursor: pointer;
 }
@@ -106,7 +129,7 @@ button:hover {
 .sensacoes {
   display: flex;
   text-align: center;
-  justify-content:center;
+  justify-content: center;
   background-color: #e6e0d6;
   border-radius: 10px;
 }
@@ -114,14 +137,41 @@ button:hover {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap; 
-  margin-bottom: 10px;  
+  flex-wrap: wrap;
+  margin-bottom: 10px;
   padding: 2px;
   width: 180px;
 }
+.dadosPessoais {
+  display: grid;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.dadosPessoais select {
+  height: 40px;
+  border-radius: 5px;
+  width: 300px;
+  border: solid 1px rgb(165, 163, 163);
+  font-size: 20px;
+  color: #444;
+}
+.dadosPessoais input {
+  height: 35px;
+  border-radius: 5px;
+  border: solid 1px rgb(165, 163, 163);
+  font-size: 20px;
+  color: #444;
+}
+.dadosPessoais label {
+  margin-top: 14px;
+  font-size: 18px;
+}
 .categoriaEmocoes img {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   align-content: center;
   padding: 10px;
@@ -140,12 +190,10 @@ button:hover {
 .checkbox-container input[type="checkbox"] {
   display: none;
 }
-
-  input[type="radio"] {
-    transform: scale(1.5);
-    margin-right: 8px;
-  }
-
+input[type="radio"] {
+  transform: scale(1.5);
+  margin-right: 8px;
+}
 .custom-checkbox::after {
   content: "";
   position: absolute;
@@ -166,7 +214,6 @@ button:hover {
 .checkbox-container input[type="checkbox"]:checked + .custom-checkbox::after {
   opacity: 1;
 }
-
 .categoriaPerguntas {
   display: block;
   background-color: #e6e0d6;
@@ -174,43 +221,101 @@ button:hover {
   border-radius: 10px;
   padding: 20px;
 }
-
-.pergunta{
-  display:flex;
+.pergunta {
+  display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
 }
-
-.resposta{
-  display:grid;
+.resposta {
+  display: grid;
   width: 100%;
 }
-
-.resposta textarea{
+.resposta textarea {
   font-size: 20px;
   height: 60px;
   border-radius: 10px;
-  font-family: 'Helvetica', serif;
-  color:#3c604f;
+  font-family: "Helvetica", serif;
   padding: 10px;
+  color: #444;
 }
-.resultado{
+.resultado {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
-.resultado table{
+.resultado table {
   border-collapse: collapse;
-    width: 100%;
-    max-width: 600px;
+  width: 100%;
+  max-width: 600px;
 }
-.resultado th, td {
-    border: 1px solid #444;
-    padding: 4px;
-    text-align: left;
-    width: 10px;
+.resultado th,
+td {
+  border: 1px solid #444;
+  padding: 4px;
+  text-align: left;
+  width: 10px;
+  font-size: 12px;
+}
+.dadosPessoaisResultadoBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dadosPessoaisResultado {
+  width: 600px;
+}
+.dadosPessoaisResultado p{
+  margin: 0px;
+  padding: 0px 0px 5px 0px;
+  font-size: 16px;
+}
+
+
+/*------TABELA RESULTADO------
+
+/* Estilos para o contêiner da tabela */
+#containerTabelaResultados {
+    width: 100%; /* Largura total do contêiner */
+    max-width: 600px; /* Largura máxima para que não estique demais */
+    text-align: center; /* Centraliza o título H2 */
+}
+/* Estilo para o título dentro do contêiner */
+#containerTabelaResultados h2 {
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    font-size: 22px; /* Tamanho maior da fonte */
+}
+/* Estilos para as células do cabeçalho */
+#containerTabelaResultados th {    
+    color: #030303; /* Cor mais escura para o texto do cabeçalho */
+    font-size: 16px; /* Tamanho da fonte ligeiramente menor */
+    padding: 5px 5px;
+}
+/* Estilos para a tabela em si */
+#containerTabelaResultados table {
+    width: 100%; /* A tabela ocupa 100% do contêiner */
+    border-collapse: collapse; /* Remove o espaço entre as células da tabela */
+    margin-top: 15px; /* Espaço acima da tabela */
+    font-size: 16px; /* Tamanho da fonte ligeiramente menor */
+}
+/* Estilos para o cabeçalho da tabela (th) e células de dados (td) */
+#containerTabelaResultados th,
+#containerTabelaResultados td {
+    border: 1px solid #050505; /* Borda mais suave para as células */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+.resumo-emocoes{
+  display:block;
+  text-align: left;
+  align-items: center;
+}
+.resumo-emocoes p{
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: #030303 1px solid;
+  align-items: center;
+  vertical-align:middle;
 }
 
 @media (max-width: 600px) {
