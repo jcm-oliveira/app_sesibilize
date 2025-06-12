@@ -42,23 +42,48 @@
           <div class="resposta">
             <textarea name="" id=""></textarea>
           </div>
+
           <div class="pergunta">
             <p>3 - Qual das imagens vc melhor se identificou <b>neste momento?</b></p>
           </div>
+
           <div class="resposta">
             <textarea name="" id=""></textarea>
           </div>
+
           <div class="pergunta">
             <p>4 - Qual imagem vc se enxerga <b>no futuro?</b></p>
           </div>
+
           <div class="resposta">
             <textarea name="" id=""></textarea>
           </div>
+
+          <div class="pergunta">
+            <p>5 - O que você percebeu  nas imagens que <b>mais te chamou atenção?</b></p>
+          </div>
+
+          <div class="resposta">
+            <textarea name="" id=""></textarea>
+          </div>
+
+          <div class="pergunta">
+            <p>6 - Ao finalizar o teste, <b>percebeu algo diferente em suas emoções</b>? Se sim, descreva brevemente.</b></p>
+          </div>
+
+
+          <div class="resposta">
+            <textarea name="" id=""></textarea>
+          </div>
+
         </div>
+
       </div>
-      <div class="botaoPaginacaoBox">
-        <a href="../pages/Resultado.html" class="botaoPaginacao">PRÓXIMA</a>
-      </div>
+
+        <div class="botaoPaginacaoBox">
+          <button id="btnProximo" class="botaoPaginacao">PRÓXIMO</button>
+        </div>
+
     </main>
 
     <footer>
@@ -75,5 +100,18 @@
         <b>Avaliação A3 -</b> Arnaldo, João, Marciel, Vanessa
       </div>
     </footer>
+
+        <script>
+            document.getElementById('btnProximo').addEventListener('click', () => {
+              // Captura todos os parâmetros da URL atual
+              const urlParams = new URLSearchParams(window.location.search);
+              // Redireciona para a página Resultado com os mesmos parâmetros
+              window.location.href = `Resultado.html?${urlParams.toString()}`;
+            });
+        </script>
+
+
+
+
   </body>
 </html>
