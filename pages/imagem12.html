@@ -16,11 +16,11 @@
 
     <main>
       <div style="display: flex; justify-content: center; align-items: center">
-        <h2>Imagem n° 3</h2>
+        <h2>Imagem n° 12</h2>
       </div>
       <div class="imagem">
         <img
-          src="../img/Imagem3.png"
+          src="../img/Imagem12.jpg"
           alt=""
           width="600"
           height="400"
@@ -29,8 +29,8 @@
       </div>
       <div style="text-align: center">
         <p>
-          Escolha uma das palavras que mais define esta imagem de acordo
-          com as suas emoções:
+          Escolha uma das palavras que mais define esta imagem de acordo com as
+          suas emoções:
         </p>
       </div>
 
@@ -49,7 +49,7 @@
               <input
                 type="radio"
                 id="Alegria"
-                name="emocao_imagem3"
+                name="emocao_imagem12"
                 value="Alegria"
               />
               Alegria
@@ -58,7 +58,7 @@
               <input
                 type="radio"
                 id="Calma"
-                name="emocao_imagem3"
+                name="emocao_imagem12"
                 value="Calma"
               />
               Calma
@@ -67,7 +67,7 @@
               <input
                 type="radio"
                 id="Coragem"
-                name="emocao_imagem3"
+                name="emocao_imagem12"
                 value="Coragem"
               />
               Coragem
@@ -76,7 +76,7 @@
               <input
                 type="radio"
                 id="Amor"
-                name="emocao_imagem3"
+                name="emocao_imagem12"
                 value="Amor"
               />
               Amor
@@ -85,7 +85,7 @@
               <input
                 type="radio"
                 id="Esperanca"
-                name="emocao_imagem3"
+                name="emocao_imagem12"
                 value="Esperanca"
               />
               Esperança
@@ -94,7 +94,7 @@
               <input
                 type="radio"
                 id="Tranquilidade"
-                name="emocao_imagem3"
+                name="emocao_imagem12"
                 value="Tranquilidade"
               />
               Tranquilidade
@@ -107,26 +107,46 @@
           </div>
           <div class="buttonBox">
             <label class="checkbox-container">
-              <input type="radio" id="Tristeza" name="emocao_imagem3" value="Tristeza" />
+              <input
+                type="radio"
+                id="Tristeza"
+                name="emocao_imagem12"
+                value="Tristeza"
+              />
               Tristeza
             </label>
             <label class="checkbox-container">
-              <input type="radio" id="Raiva" name="emocao_imagem3" value="Raiva" />
+              <input
+                type="radio"
+                id="Raiva"
+                name="emocao_imagem12"
+                value="Raiva"
+              />
               Raiva
             </label>
             <label class="checkbox-container">
-              <input type="radio" id="Medo" name="emocao_imagem3" value="Medo" />
+              <input
+                type="radio"
+                id="Medo"
+                name="emocao_imagem12"
+                value="Medo"
+              />
               Medo
             </label>
             <label class="checkbox-container">
-              <input type="radio" id="Odio" name="emocao_imagem3" value="Odio" />
+              <input
+                type="radio"
+                id="Odio"
+                name="emocao_imagem12"
+                value="Odio"
+              />
               Ódio
             </label>
             <label class="checkbox-container">
               <input
                 type="radio"
                 id="Desespero"
-                name="emocao_imagem3"
+                name="emocao_imagem12"
                 value="Desespero"
               />
               Desespero
@@ -135,7 +155,7 @@
               <input
                 type="radio"
                 id="Ansiedade"
-                name="emocao_imagem3"
+                name="emocao_imagem12"
                 value="Ansiedade"
               />
               Ansiedade
@@ -143,9 +163,9 @@
           </div>
         </div>
       </div>
-        <div class="botaoPaginacaoBox">
-          <button id="btnProximo" class="botaoPaginacao">PRÓXIMO</button>
-        </div>
+      <div class="botaoPaginacaoBox">
+        <button id="btnProximo" class="botaoPaginacao">PRÓXIMO</button>
+      </div>
     </main>
     <footer>
       <div>
@@ -162,17 +182,19 @@
       </div>
     </footer>
     <script>
-        document.getElementById('btnProximo').addEventListener('click', () => {
-            const opcaoSelecionadaElemento = document.querySelector('input[name="emocao_imagem3"]:checked');
-            if (opcaoSelecionadaElemento) {
-                const valorOpcao = opcaoSelecionadaElemento.value;
-                const urlParams = new URLSearchParams(window.location.search);
-                const selecoesAnteriores = urlParams.toString();
-                window.location.href = `imagem4.html?${selecoesAnteriores}&imagem3=${valorOpcao}`;
-            } else {
-                alert('Por favor, selecione uma opção antes de continuar.');
-            }
-        });
+      document.getElementById("btnProximo").addEventListener("click", () => {
+        const opcaoSelecionadaElemento = document.querySelector(
+          'input[name="emocao_imagem12"]:checked'
+        );
+        if (opcaoSelecionadaElemento) {
+          const valorOpcao = opcaoSelecionadaElemento.value;
+          const urlParams = new URLSearchParams(window.location.search);
+          const selecoesAnteriores = urlParams.toString();
+          window.location.href = `Imagem13.html?${selecoesAnteriores}&imagem12=${valorOpcao}`;
+        } else {
+          alert("Por favor, selecione uma opção antes de continuar.");
+        }
+      });
     </script>
   </body>
 </html>
